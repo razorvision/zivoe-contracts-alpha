@@ -17,4 +17,4 @@ Local Setup Steps:
 
 Copyright © 2021 ZivoE and contributors.
 
-Contracts are licensed AGPL 3.0, see [LICENSE](LICENSE)
+Contracts are licensed AGPL 3.0, see [LICENSE](LICENSE). Libraries are licensed MIT, see MIT
