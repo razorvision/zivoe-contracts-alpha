@@ -80,18 +80,18 @@ contract ZivoeTreasury is DaoOwnable {
 
     constructor (
         address _ZVE,
-        address _BUSD,  // TODO: (dcdr) Use BUSD or DAI?
-        address _ZVEBUSD,
+        address _DAI,
+        address _ZVEDAI,
         uint _blocksNeededForQueue
     ) {
         require( _ZVE != address(0) );
         ZVE = _ZVE;
 
-        isReserveToken[ _BUSD ] = true;
-        reserveTokens.push( _BUSD );
+        isReserveToken[ _DAI ] = true;
+        reserveTokens.push( _DAI );
 
-        isLiquidityToken[ _ZVEBUSD ] = true;
-        liquidityTokens.push( _ZVEBUSD );
+        isLiquidityToken[ _ZVEDAI ] = true;
+        liquidityTokens.push( _ZVEDAI );
 
         blocksNeededForQueue = _blocksNeededForQueue;
     }
