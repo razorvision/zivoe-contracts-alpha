@@ -134,7 +134,7 @@ contract ZivoeTreasury is DaoOwnable {
         require( isReserveSpender[ msg.sender ] == true, "Not approved" );
 
         uint value = valueOf( _token, _amount );
-        IZVEERC20( ZVE ).burnFrom( msg.sender, value );
+        IZIVOEERC20( ZVE ).burnFrom( msg.sender, value );
 
         totalReserves = totalReserves.sub( value );
         emit ReservesUpdated( totalReserves );
@@ -198,7 +198,7 @@ contract ZivoeTreasury is DaoOwnable {
     function repayDebtWithZVE( uint _amount ) external {
         require( isDebtor[ msg.sender ], "Not approved" );
 
-        IZVEERC20( ZVE ).burnFrom( msg.sender, _amount );
+        IZIVOEERC20( ZVE ).burnFrom( msg.sender, _amount );
 
         debtorBalance[ msg.sender ] = debtorBalance[ msg.sender ].sub( _amount );
         totalDebt = totalDebt.sub( _amount );
