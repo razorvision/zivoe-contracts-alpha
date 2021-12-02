@@ -1,5 +1,9 @@
 # Run Book
 
+Note: This run-book has been compiled from an analysis of the deployment script in the OHM repo. Several of the values used during contract deployment are specious.
+
+It may be important to examine the live contracts on Etherscan to determine more reasonable values for deploying these contracts to the mainnet.
+
 1. Determine the addresses of the deployer and the DAO.
 1. Deploy the `ZVE` and `sZVE` tokens.
 1. Identify the address of the treasury-backing token (`DAI`?)
