@@ -10,7 +10,7 @@ contract ZivoeERC20Token is TWAPOracleUpdater {
 
     using SafeMath for uint256;
 	
-    constructor() TWAPOracleUpdater("ZivoeDAO", "ZVE", 9) {
+    constructor() TWAPOracleUpdater("ZivoE", "ZVE", 9) {
     }
 
     function mint(address account_, uint256 amount_) external onlyVault() {
